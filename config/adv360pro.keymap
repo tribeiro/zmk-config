@@ -55,7 +55,11 @@
         shift_command_space: shift_command_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LSHFT &kp LGUI &kp SPACE>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &kp LGUI &kp SPACE>,
+                <&macro_release>,
+                <&kp LSHFT &kp LGUI &kp SPACE>;
         };
     };
 };
